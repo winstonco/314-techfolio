@@ -3,7 +3,7 @@ layout: essay
 type: essay
 title: 'My Thoughts on JavaScript'
 # All dates must be YYYY-MM-DD format!
-date: 2023-18-01
+date: 2023-01-18
 published: true
 labels:
   - JavaScript
