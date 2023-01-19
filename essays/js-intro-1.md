@@ -65,9 +65,9 @@ At first, I thought arrow functions were a really weird way to write functions, 
 
 One thing that’s not in ES6 but I also use a lot is `async`/`await`. I find it way easier to read than chaining `.then`’s. It also replaces `.catch` with regular `try`/`catch` blocks, which is also easier to understand.
 
-One feature of ES6 that I am not very familiar with is spread/rest syntax. I understand what it does and how it’s used, but I find it hard to recognize when it can be used while coding. I’ve only used it once or twice, specifically when I wanted to pass the same arguments from a custom class’ constructor to the `super()` call.
+<img class="rounded float-end ms-4" src='../img/js-intro-1/rest-args.png'>
 
-<img class="rounded float-end pe-4" src='../img/js-intro-1/rest-args.png'>
+One feature of ES6 that I am not very familiar with is spread/rest syntax. I understand what it does and how it’s used, but I find it hard to recognize when it can be used while coding. I’ve only used it once or twice, specifically when I wanted to pass the same arguments from a custom class’ constructor to the `super()` call.
 
 ### TypeScript
 
