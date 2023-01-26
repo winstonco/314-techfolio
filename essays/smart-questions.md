@@ -13,7 +13,7 @@ labels:
 
 ### Smart Questions
 
-Asking questions is one of the hallmark qualities of a software engineer. Asking smart ones is a quality of good ones. At least, that’s what I took away after reading [_How to Ask Questions the Smart Way_](http://www.catb.org/esr/faqs/smart-questions.html). It was a good read; a little dry, but that was expected given the subject matter. A lot of it was common sense in hindsight, but it’s helpful to have it explained fully. I mean, isn’t it obvious that asking the right questions will give you the right answers?
+Asking questions is one of the hallmark qualities of a software engineer. Asking smart ones is a quality of good ones. At least, that’s what I took away after reading Eric Raymond and Rick Moen's ["How to Ask Questions the Smart Way"](http://www.catb.org/esr/faqs/smart-questions.html). It was a good read; a little dry, but that was expected given the subject matter. A lot of it was common sense in hindsight, but it’s helpful to have it explained fully. I mean, isn’t it obvious that asking the right questions will give you the right answers?
 
 _Obviously_ writing a good subject header (or Stack Overflow question) is necessary.
 
@@ -21,7 +21,13 @@ _Obviously_ showing relevant details about a problem and how you tried to solve 
 
 _Obviously_ just posting homework questions is a no-no (though personally, I don’t think these people are really expecting an answer).
 
-Some of the points that I think were most important especially for asking good questions on Stack Overflow are 1) State facts. Don’t assume things about your problem. 2) Format your post, and find the section of code (or whatever) that is the root of your problem, if possible. 3) “Describe the goal, not the step.” You might think you know what a solution looks like, but yours might be makeshift or ill-informed. Instead, let the community guide you toward what the solution should look like.
+Some of the points that I think were most important especially for asking good questions on Stack Overflow are:
+
+1. State facts. Don’t assume things about your problem.
+
+2. Format your post, and find the section of code (or whatever) that is the root of your problem, if possible.
+
+3. “Describe the goal, not the step.” You might think you know what a solution looks like, but yours might be makeshift or ill-informed. Instead, let the community guide you toward what the solution should look like.
 
 ### A bad question
 
@@ -37,7 +43,7 @@ By contrast, here’s what I think is [a pretty good post](https://stackoverflow
 
 Here’s another example of [a good post](https://stackoverflow.com/questions/37233735/interfaces-vs-types-in-typescript). Now, looking at some of the guidelines, why is this post good? Well, to start off, the post is extremely succinct and straight to the point. They want to know the difference between Interfaces and Types in TypeScript. The poster shares two seemingly functionally equivalent statements.
 
-```ts
+```typescript
 interface X {
   a: number;
   b: string;
