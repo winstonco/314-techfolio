@@ -21,7 +21,7 @@ _Obviously_ showing relevant details about a problem and how you tried to solve 
 
 _Obviously_ just posting homework questions is a no-no (though personally, I don’t think these people are really expecting an answer).
 
-Some of the points that I think were most important especially for asking good questions on Stack Overflow are:
+Some of the points that I think were most important, especially for asking good questions on Stack Overflow, are:
 
 1. State facts. Don’t assume things about your problem.
 
