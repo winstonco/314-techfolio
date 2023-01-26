@@ -11,8 +11,6 @@ labels:
   - Stack Overflow
 ---
 
-<img width="200px" class="rounded float-start pe-4" src="../img/difficulty/degree_difficulty.jpg">
-
 ### Smart Questions
 
 Asking questions is one of the hallmark qualities of a software engineer. Asking smart ones is a quality of good ones. At least, that’s what I took away after reading [How to Ask Questions the Smart Way](http://www.catb.org/esr/faqs/smart-questions.html). It was a good read; a little dry, but that was expected given the subject matter. A lot of it was common sense in hindsight, but it’s helpful to have it explained fully. I mean, isn’t it obvious that asking the right questions will give you the right answers?
