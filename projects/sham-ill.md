@@ -2,7 +2,7 @@
 layout: project
 type: project
 image: img/sham-ill/sham-ill-square.png
-title: 'Sham Illustrator'
+title: "Sham Illustrator"
 date: 2022-12-24
 published: true
 labels:
@@ -10,7 +10,7 @@ labels:
   - React + MUI
   - Socket.io
   - Express
-summary: 'A small party game that didn't realize "Fake Artist" was already taken.'
+summary: "A small party game that didn't realize \"Fake Artist\" was already taken."
 ---
 
 #### [Play Now](https://sham-illustrator.onrender.com/)
