@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/sham-ill/sham-ill-square.jpg
+image: img/sham-ill/sham-ill-square.png
 title: 'Sham Illustrator'
 date: 2022-12-24
 published: true
