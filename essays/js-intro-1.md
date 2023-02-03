@@ -51,6 +51,10 @@ though usually I'd write
 const sum = (num1, num2) => {...}
 ```
 
+---
+
+<img src='../img/js-intro-1/freeCodeCamp.png'>
+
 ### What I learned on freeCodeCamp and what to learn in the future
 
 While doing the tutorial on freeCodeCamp, one thing I learned about was object bracket notation. Previously, I’d only used dot notation, but I see how bracket notation can be extremely valuable. With dot notation, you can’t use a variable for the property, but with bracket notation you can, while also doing the same thing that dot notation already does. I’m also not good at using the many array methods. The ones at the top of my list to learn are `.filter`, `.map`, and `.reduce`.
