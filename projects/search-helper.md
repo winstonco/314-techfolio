@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/search-helper/search-helper-square.png
+image: img/search-helper/square.png
 title: 'Sham Illustrator'
 date: 2022-11-06
 published: true
@@ -15,7 +15,9 @@ labels:
 summary: 'A joke Google "companion app" to help my friend find homework help online.'
 ---
 
-### <a href="https://search-helper-production.up.railway.app/" target="_blank" style='text-decoration:underline'>Try It</a>
+### <a href="https://search-helper-production.up.railway.app/" target="_blank" style='text-decoration:underline'>Search Helper</a>
+
+### The goal 🏁
 
 It's just a tool to search queries on either Google or site in the Stack Exchange network (default: Stack Overflow). There are a few operators you can add to a query to narrow search results, used similar to tags in a CLI:
 
@@ -25,13 +27,39 @@ It's just a tool to search queries on either Google or site in the Stack Exchang
 t-[text] : must have tag
 ```
 
+<img class='img-fluid float-right' src='../img/search-helper/sign-in.png'>
+
 Users can also register with a username and password in order to save (⭐) search results.
 
----
+### A dumb joke
 
 I had the idea for the project mostly as a joke because my friend was complaining about how hard it was to find exactly what he wanted on Google and Stack Overflow (for homework answers), so I guess there's demand for a project like this.
 
-The project uses a MongoDB instance, set up within the project on Railway.
+### Learning React
+
+It took a bit of getting used to the pattern of making components to represent things I would otherwise do in HTML, but after the initial learning curve, I found React very fun to use. To me, using component architecture is intuitive and practical and solves many problems that come up using just vanilla JavaScript and HTML.
+
+### Using a database
+
+The project uses a MongoDB instance, set up within the project on Railway. This is the first (and only time) I've used a database. I didn't (and still don't) even know SQL, but am currently learning it.
+
+After hours of reading the docs and tutorials and watching videos, I vaguely understood how documents, which are basically just JSON, are organized in collections, which is managed by the project on an admin user, which are all in datasets, which can be a single database or a cluster for horizontal scaling 😵.
+
+#### Backend
+
+<img class='img-fluid float-left' src='../img/search-helper/postman.png'>
+
+Postman API testing
+
+The server I set up for this project is simple, and really just to retrieve data from the database. Here's when I learned what a REST API was and different API request types (GET, POST, DELETE, etc.).
+
+### A confession...
+
+However, I have a confession to make about this project. It's kinda hard to explain, but there's another (kinda anonymous) contributer to the project, who helped guide me in learning React and other development patterns. He introduced me to the term "monorepo", which doing on accident, and used the [Lerna](https://lerna.js.org/) monorepo tool to manage the front and backend.
+
+He also introduced me to Docker and wrote the Dockerfile. He taught me how Docker works and what it's used for.
+
+Finally, he helped me deploy my code on Railway. Since Railway automatically detects a Docker file, the deployment process went smoothly. My first attempt to deploy something was with my Widget, but I had many problems doing so. My first attempts at deploying this project were also relatively unsuccessful, maybe because I didn't know what building a project vs starting it was.
 
 ---
 

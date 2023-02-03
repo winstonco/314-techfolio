@@ -44,6 +44,8 @@ At least, that's what's supposed to happen...
 
 Well, the thing is, it isn't actually done yet. Actually, there's quite a bit to do. At the top of the list is getting the end of game stuff working. Currently, players can guess by typing a name, but the responses are not handled, so nothing happens. Also, in the final version, players will guess by just clicking an icon or name. Also x2, game settings (the diabled button on the home page) is also at the top of the list. When it's done, players can customize their lobbies however they like!
 
+---
+
 ### The goal 🏁
 
 Initially, I thought the project would be on the shorter side, but a little over a month later, I no longer think it is. The goal was mainly to learn TypeScript, which I enjoy using very much, and at the same time get more familiar with React. I also wanted to try Material UI, a React component library, to learn more about different development tools and styles.
