@@ -10,8 +10,7 @@ labels:
   - React + MUI
   - Socket.io
   - Express
-  - Docker
-summary: 'A small party game that didn't realize "Fake Artist" was already taken.'
+summary: 'A small party game that didn't realize \"Fake Artist\" was already taken.'
 ---
 
 <img class='' src='../img/sham-ill/home.png'>
