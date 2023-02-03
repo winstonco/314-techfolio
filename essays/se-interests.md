@@ -15,7 +15,7 @@ My interest in software engineering is mostly from finding it fun and rewarding 
 
 ---
 
-### A short history lesson :books:
+### A short history lesson 📚
 
 My earliest memory of actual exposure to computers was in lower school. We had a computer class where we learned to type with Mavis Beacon Teaches Typing and learned to code with [Scratch](https://scratch.mit.edu). That class sparked my interest in coding, especially in making games, and from then on I wanted to be a game developer. I spent a lot of time on the library computers tinkering in Scratch, never making anything substantial, but making a lot nonetheless.
 
@@ -38,14 +38,15 @@ In high school, I took AP Computer Science Principles, which for the most part u
     An interactive game where you explore the map to complete quests, in Chinese.
   </div>
 </div>
+<br>
 
-### :computer: Web development or :video_game: game development?
+### 💻 Web development or 🎮 game development?
 
 Last October, I delved a bit in learning web development, just 'cause I thought it'd be fun. From lower school until then, I was pretty set on being a game developer, but web dev. turned out to be a lot of fun, so I had to decide what to pursue. I was kind of torn, so I asked around for advice at events with both fullstack engineers and game developers. The general consensus was that since web dev. has higher demand (plus, games need websites too), if the decision is split 50/50, go forth with web development.
 
 I took their advice and chose to be fully dedicated to learning web dev. and haven't had any regrets (for now). One guy I spoke to suggested I just make a web game, the best of both worlds, and I must just love making games, because the project I've had the most fun making is [a game](/314-techfolio/projects/sham-ill.html).
 
-I'm interested in both, so I guess there isn't really a right answer :shrug:.
+I'm interested in both, so I guess there isn't really a right answer 🤷‍♂️.
 
 ---
 

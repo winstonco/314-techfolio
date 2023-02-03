@@ -25,7 +25,7 @@ It's just a tool to search queries on either Google or site in the Stack Exchang
 t-[text] : must have tag
 ```
 
-Users can also register with a username and password in order to save (:star:) search results.
+Users can also register with a username and password in order to save (⭐) search results.
 
 ---
 

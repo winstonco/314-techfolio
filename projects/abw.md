@@ -19,9 +19,15 @@ This widget was my first project and my introduction to web development. It is j
 
 ---
 
+### The goal 🏁
+
+The goal of this project was very simple: I just wanted a box that did something when a Twitch event happened. _I mean, how hard can that be?_
+
 ### First learning web development
 
-The goal of this project was very simple: I just wanted a box that did something when a Twitch event happened. _I mean, how hard can that be?_ Originally, I planned to use Stream Elements' developer toolkit to make the widget, but after messing around with it for a day, I decided against it because it would be 1) easier to make it from scratch, and 2) more beneficial to learn from the ground up. Well, after day one, I felt like I was throwing myself in the fire, even though I knew the project was simple in concept. To put things in perspective, before making this, I had only worked with HTML and CSS (and _very_ little JS). I was practically following tutorials for every step of the way. I didn't really know what the difference between a server and client is, I'd never even heard of "REST", I didn't know what a webhook or CLI was, basically I was a complete beginner.
+Turns out, pretty hard.
+
+Originally, I planned to use Stream Elements' developer toolkit to make the widget, but after messing around with it for a day, I decided against it because it would be 1) easier to make it from scratch, and 2) more beneficial to learn from the ground up. Well, after day one, I felt like I was throwing myself in the fire, even though I knew the project was simple in concept. To put things in perspective, before making this, I had only worked with HTML and CSS (and _very_ little JS). I was practically following tutorials for every step of the way. I didn't really know what the difference between a server and client is, I'd never even heard of "REST", I didn't know what a webhook or CLI was, basically I was a complete beginner.
 
 ### Week 1:
 
