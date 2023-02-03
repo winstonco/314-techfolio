@@ -57,17 +57,6 @@
       ]
     }
   ],
-  "work": [
-    {
-      "company": "",
-      "position": "",
-      "website": "",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
-      "highlights": ["", ""]
-    }
-  ],
   "volunteer": [
     {
       "organization": "VIP RoSE (Robotic Space Exploration)",
@@ -75,7 +64,7 @@
       "position": "Software Engineer",
       "startDate": "2021-09",
       "endDate": "2022-05",
-      "summary": "IDK",
+      "summary": "I volunteered as a software engineer in my freshman year. I worked with the team to create rover software for the autonomous section of the University Rover Challenge 2023.",
       "highlights": [
         "Implemented a logic framework using a state machine library",
         "Helped test waypoint detection and path planning functionalities"
