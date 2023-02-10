@@ -23,7 +23,7 @@ Every language has its own “shape” and a set of standards that match it. For
 ```c#
 public static void main(string[] args)
 {
-  …
+  // Some code
 }
 ```
 
@@ -31,15 +31,15 @@ while in JavaScript, curly braces start on the same line.
 
 ```js
 const main = () => {
-  …
-} // notice anything wrong?
+  // Some code
+}; // notice anything wrong?
 ```
 
 or
 
 ```js
 function main() {
-  …
+  // Some code
 }
 ```
 
