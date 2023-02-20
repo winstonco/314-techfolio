@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/sham-ill/square.png
+image: img/illustraitor/square.png
 title: 'Illustraitor'
 date: 2022-12-24
 published: true
@@ -15,7 +15,7 @@ summary: 'An original party/drawing/social-deduction game I created, before I le
 ---
 
 <div style='display:flex;flex-direction:column;align-items:center'>
-  <img class='img-fluid' src='../img/sham-ill/home.png'>
+  <img class='img-fluid' src='../img/illustraitor/home.png'>
   Home page
   <h3><a href="https://illustraitor.onrender.com/" target="_blank" style='text-decoration:underline'>Play Now</a></h3>
 </div>
@@ -24,25 +24,21 @@ summary: 'An original party/drawing/social-deduction game I created, before I le
 
 #### What is Sham Illustrator?
 
-It's a party game where everyone is an artist, but one player is actually a fake. Every player is given the same prompt, except the imposter (they get nothing). In a random order, each player has a short time to add to a collective drawing, each trying to prove they know what the true prompt is. At the end of the game, the goal is to guess who the imposter was.
+It's a party game where everyone is an artist, but one player is actually a fake. Every player is given the same prompt, except the imposter (they get much less, and must figure out what the prompt is before it's too late). In a random order, each player has a short time to add to a collective drawing, each trying to prove they know what the true prompt is. At the end of the game, the goal is to guess who the imposter was.
 
 #### Game setup
 
-You can create a lobby by clicking the link above, and clicking `CREATE LOBBY`.
+You can create a lobby by clicking the link above ('Play Now'), and clicking `New Lobby`.
 
-**[Note]** for some reason, the initial page load time is _really_ slow. It might have to do with how the changelog is being fetched, so I need to look into it.
+**[Note]** for some reason, the initial page load time is sometimes _really_ slow. It might have to do with how the changelog is being fetched, so I need to look into it.
 
-After creating a lobby and entering a name or continuing with the randomly generated one, click `COPY INVITE LINK` to get a link to share with other people. Alternatively, other players can join your lobby with the 12-character code, if that's easier for some reason.
+After creating a lobby and entering a name or randomly generating one, click `COPY INVITE LINK` to get a link to share with other people. Alternatively, other players can join your lobby with the 12-character code, after clicking `Join Lobby`, if that's easier for some reason.
+
+You can also change lobby specific settings on the home page, before creating a lobby.
 
 #### How to play
 
-Once a minimum of three players have joined a lobby. Press `START` to start the game. One player will have the role 'Imposter' and everyone else will be 'Real'. Everyone except the Imposter should see the prompt appear and who is currently drawing. That player has default 10 seconds to draw something on the screen. Players rotate until every player has gone, after which every player may guess a name who they think was faking it.
-
-At least, that's what's supposed to happen...
-
-#### One final note
-
-Well, the thing is, it isn't actually done yet. Actually, there's quite a bit to do. At the top of the list is getting the end of game stuff working. Currently, players can guess by typing a name, but the responses are not handled, so nothing happens. Also, in the final version, players will guess by just clicking an icon or name. Also x2, game settings (the diabled button on the home page) is also at the top of the list. When it's done, players can customize their lobbies however they like!
+Once a minimum of three players have joined a lobby. Press `Start` to start the game. One player will have the role 'Imposter' and everyone else will be 'Real'. Everyone except the Imposter should see the prompt appear and who is currently drawing. That player has default 15 seconds to draw something on the screen. Players rotate until every player has gone, after which every player may guess a name who they think was faking it. By default, the number of rounds equals the number of imposters, and the real artists win by correctly revealing the all the imposters, meaning they must win every round.
 
 ---
 
@@ -73,7 +69,7 @@ Recently, I decided to add tests to this project, mainly E2E tests with Cypress,
 ---
 
 <div style='display:flex;flex-direction:column;align-items:center'>
-  <img class='img-fluid' src='../img/sham-ill/404.png'>
+  <img class='img-fluid' src='../img/illustraitor/404.png'>
   Custom 404 page. The door goes back to home.
 </div>
 
