@@ -32,7 +32,7 @@ while in JavaScript, curly braces start on the same line.
 ```js
 const main = () => {
   // Some code
-}; // notice anything wrong?
+} // notice anything wrong?
 ```
 
 or
