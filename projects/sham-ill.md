@@ -2,7 +2,7 @@
 layout: project
 type: project
 image: img/sham-ill/square.png
-title: 'Sham Illustrator'
+title: 'Illustraitor'
 date: 2022-12-24
 published: true
 labels:
@@ -11,13 +11,13 @@ labels:
   - Socket.io
   - Express
   - Docker
-summary: 'A small party game that didn''t realize "Fake Artist" was already taken.'
+summary: 'An original party/drawing/social-deduction game I created, before I learned that "Fake Artist" already exists.'
 ---
 
 <div style='display:flex;flex-direction:column;align-items:center'>
   <img class='img-fluid' src='../img/sham-ill/home.png'>
   Home page
-  <h3><a href="https://sham-illustrator.onrender.com/" target="_blank" style='text-decoration:underline'>Play Now</a></h3>
+  <h3><a href="https://illustraitor.onrender.com/" target="_blank" style='text-decoration:underline'>Play Now</a></h3>
 </div>
 
 ### About the game
