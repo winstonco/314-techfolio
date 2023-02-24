@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: 'What Makes a Good Question?'
+title: 'Do UI Frameworks Work?'
 # All dates must be YYYY-MM-DD format!
 date: 2023-02-23
 published: true
