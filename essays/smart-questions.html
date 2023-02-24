@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="What Makes a Good Question? | Winston Co | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="img/portrait-square.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Winston Co | Professional Portfolio">
+    <meta property="og:url" content="https://winstonco.org/314-techfolio/314-techfolio/essays/smart-questions.html">
+    <meta property="og:title" content="What Makes a Good Question? | Winston Co | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="img/portrait-square.png">
+    <link rel="shortcut icon" href="/314-techfolio/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/314-techfolio/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/314-techfolio/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>What Makes a Good Question? | Winston Co | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/314-techfolio/">Winston Co</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/314-techfolio/#projects">Projects</a>
+        <a class="nav-link" href="/314-techfolio/#essays">Essays</a>
+        <a class="nav-link" href="/314-techfolio/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">What Makes a Good Question?</h1>
+  <span class="date">25 Jan 2023</span>
+  <hr>
+  <h3 id="smart-questions">Smart Questions</h3>
+
+<p>Asking questions is one of the hallmark qualities of a software engineer. Asking smart ones is a quality of good ones. At least, that’s what I took away after reading Eric Raymond and Rick Moen’s <a href="&quot;http://www.catb.org/esr/faqs/smart-questions.html&quot;">“How to Ask Questions the Smart Way”</a>. It was a good read; a little dry, but that was expected given the subject matter. A lot of it was common sense in hindsight, but it’s helpful to have it explained fully. I mean, isn’t it obvious that asking the right questions will give you the right answers?</p>
+
+<p><em>Obviously</em> writing a good subject header (or Stack Overflow question) is necessary.</p>
+
+<p><em>Obviously</em> showing relevant details about a problem and how you tried to solve it is necessary.</p>
+
+<p><em>Obviously</em> just posting homework questions is a no-no (though personally, I don’t think these people are really expecting an answer).</p>
+
+<p>Some of the points that I think were most important, especially for asking good questions on Stack Overflow, are:</p>
+
+<ol>
+  <li>
+    <p>State facts. Don’t assume things about your problem.</p>
+  </li>
+  <li>
+    <p>Format your post, and find the section of code (or whatever) that is the root of your problem, if possible.</p>
+  </li>
+  <li>
+    <p>“Describe the goal, not the step.” You might think you know what a solution looks like, but yours might be makeshift or ill-informed. Instead, let the community guide you toward what the solution should look like.</p>
+  </li>
+</ol>
+
+<h3 id="a-bad-question-">A bad question 👎</h3>
+
+<p>When I looked on Stack Overflow, I didn’t have to search hard to find <a href="https://stackoverflow.com/questions/25472744/can-anyone-solve-this-error-in-jdbctemlate">a bad question</a>. You can tell it is a bad question just from the title itself. All the poster did is give an error log and write</p>
+
+<blockquote>
+  <p>“Can anyone solve this error in <strong>Spring</strong> using <code class="language-plaintext highlighter-rouge">JdbcTemplate</code>. Here is the Error-”.</p>
+</blockquote>
+
+<p>The replies to the post ask for more details, but the poster never followed up or updated their question. The only answer received explained possible issues and a command they could run to find the source of the problem. However, I’m not even sure if this was even helpful because the poster never marked it as accepted.</p>
+
+<h3 id="a-good-question-">A good question 👍</h3>
+
+<p>By contrast, here’s what I think is <a href="https://stackoverflow.com/questions/67652612/chunkloaderror-loading-chunk-node-modules-next-dist-client-dev-noop-js-failed/67659159#67659159">a pretty good post</a>. The poster states they’ve been following the tutorial on the Next.js website, which makes the error very reproducible. To me, the title of the post says enough. It’s clearly a Next.js error from the <code class="language-plaintext highlighter-rouge">next_dist</code> part and the post’s tags. They included the error message and images of the error message shown on client-side. The accepted answer is very helpful; they explain how they went through GitHub issues and blog posts trying to find an explanation, but the error is a caching error, probably caused by strange Next.js behavior. Looking at others’ replies, the error is common and replicable in many ways. A post such as this bringing a common problem to light will hopefully lead to an issue being posted and improvements being made to the framework/app/program/etc.</p>
+
+<p>Here’s another example of <a href="https://stackoverflow.com/questions/37233735/interfaces-vs-types-in-typescript">a good post</a>. Now, looking at some of the guidelines, why is this post good? Well, to start off, the post is extremely succinct and straight to the point. They want to know the difference between Interfaces and Types in TypeScript. The poster shares two seemingly functionally equivalent statements.</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kr">interface</span> <span class="nx">X</span> <span class="p">{</span>
+  <span class="nl">a</span><span class="p">:</span> <span class="kr">number</span><span class="p">;</span>
+  <span class="nl">b</span><span class="p">:</span> <span class="kr">string</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">type</span> <span class="nx">X</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">a</span><span class="p">:</span> <span class="kr">number</span><span class="p">;</span>
+  <span class="nl">b</span><span class="p">:</span> <span class="kr">string</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>You might be wondering how this shows any work done on the poster’s part. Short answer: it doesn’t. But I don’t think it has to. The point of the post is obviously for clarifying purposes, and by looking at the answers, the documentation at the time of posting was not very clear on the difference. The post also evolved to be a forum of its own, so answers can get updated as the TypeScript docs are updated.</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
