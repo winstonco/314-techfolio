@@ -9,7 +9,7 @@ labels:
   - Software Engineering
 ---
 
-#### If you are reading an essay about software engineering, I’m assuming you have an understanding of the basics.
+**If you are reading an essay about software engineering, I’m assuming you have an understanding of the basics.**
 
 ### What is software engineering?
 
