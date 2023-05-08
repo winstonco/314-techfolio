@@ -7,7 +7,8 @@ date: 2022-12-24
 published: true
 labels:
   - TypeScript
-  - React + MUI
+  - React
+  - MUI
   - Socket.io
   - Express
   - Docker
