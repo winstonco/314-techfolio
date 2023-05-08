@@ -8,6 +8,7 @@ published: true
 labels:
   - Meteor
   - React
+  - TypeScript
   - Sass
   - Testcafe
 summary: 'An app to connect employers directly with students looking for internships and other opportunities.'
