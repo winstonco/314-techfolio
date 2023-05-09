@@ -1,19 +1,12 @@
 {
   "basics": {
     "name": "Winston Co",
-    "label": "Student",
+    "label": "Junior Computer Science Student",
     "picture": "img/portrait-square.png",
-    "email": "cow@hawaii.edu",
+    "email": "winstonco@live.com",
     "phone": "808-724-6024",
     "website": "https://winstonco.org/314-techfolio",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2024.",
-    "location": {
-      "address": "2540 Maile Way",
-      "postalCode": "96822",
-      "city": "Honolulu",
-      "countryCode": "USA",
-      "region": "Hawaii"
-    },
+    "summary": "I am pursuing a B.S. in Computer Science at the University of Hawaii. I expect to graduate in Spring, 2024.",
     "profiles": [
       {
         "network": "github",
@@ -28,31 +21,30 @@
     ]
   },
   "interests": [
+    { "name": "Software engineering" },
     { "name": "Web development" },
-    { "name": "App development" },
-    { "name": "Game development" }
+    { "name": "App development" }
   ],
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": ["Java", "JavaScript", "TypeScript", "React"]
+      "keywords": ["HTML", "CSS", "JavaScript", "TypeScript", "React"]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": ["Windows", "Git/GitHub"]
+      "keywords": ["VSCode", "Windows", "Git", "GitHub"]
     }
   ],
   "education": [
     {
-      "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2024)",
+      "institution": "University of Hawaii at Manoa",
       "studyType": "B.S.",
+      "area": "Computer Science (expected graduation: Spring, 2024)",
       "startDate": "2021-08-23",
       "endDate": "Present",
       "courses": [
-        "ICS 212: Program Structure",
+        "ICS 314: Software Engineering I",
         "ICS 311: Algorithms",
-        "ICS 390: Computing Ethics",
         "MATH 307: Linear Algebra & Differential Equations"
       ]
     }
@@ -74,14 +66,9 @@
   "awards": [
     {
       "title": "Eagle Scout",
-      "date": "2021-04",
+      "date": "2021-04-30",
       "awarder": "Aloha Council, BSA",
       "summary": "im an eagle scout"
-    }
-  ],
-  "references": [
-    {
-      "name": "Available upon request"
     }
   ]
 }
