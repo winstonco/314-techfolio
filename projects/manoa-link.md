@@ -53,8 +53,6 @@ For students, the home page mainly consists of a feed where they can see upcomin
 
 For companies, the dashboard was meant to give an overview of everything. Companies can see all their upcoming events and job listings posted. On each job, it also shows a badge with how many people saved their job, so they have some popularity metrics. Finally, there's a calendar widget populated with their upcoming events so they can easily see their availability.
 
----
-
 <a href="https://www.meteor.com/" target="_blank">
   <img style="height: 2.5em;" alt="Meteor.js logo" src="../img/manoa-link/meteor-logo-full.png" />
 </a>
@@ -77,7 +75,9 @@ It's hard to pinpoint what I worked on since I generally contributed throughout 
 
 Whenever I worked on something new, if it was a new component, I tried to make it as reusable as possible, with complete documentation on what the component does, its props, and example usage. And speaking of components, I tried to have everyone start thinking 'component-wide' instead of 'page-wide' like they were used to. If I was making a new page, I started with a wireframe in Figma before actually coding, and I wrote tests for its functionality.
 
-One area that my teammates _desperately_ needed help was debugging. In short, they were completely inexperienced in fixing their code. The first thing I noticed, which shocked me, was that my teammates would _never_ log anything to the console. They avoided it like how I avoid comments! They just didn't know that there even was a console! And since they had no idea about the console, when they first started debugging, they never opened the DevTools. Or when they did, they'd look at the big, red error message but never stop to read it! Granted, Meteor's error messages are not always helpful, but there's always something to find in them.
+One area that my teammates _desperately_ needed help was debugging. The first thing I noticed, which shocked me, was that my teammates would _never_ log anything to the console. They avoided it like how I avoid comments ([why](https://www.youtube.com/watch?v=Bf7vDBBOBUA))! They just didn't know there even was a console! And since they had no idea about the console, when they first started debugging, they never opened the DevTools. Or when they did, they'd look at the big, red error message but never stop to read it! Granted, Meteor's error messages are not always helpful, but there's always something to find in them.
+
+I tried to show them what to look for in the error message, what they should be logging while developing, and common errors.
 
 ### Some final remarks
 
