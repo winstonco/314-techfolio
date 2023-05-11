@@ -14,7 +14,16 @@ labels:
 summary: 'An app to connect employers directly with students looking for internships and other opportunities.'
 ---
 
-<img class="img-fluid" alt="Manoa Link landing page" src="../img/manoa-link/landing.png" />
+<style>
+figcaption {
+  text-align: center;
+}
+</style>
+
+<figure>
+  <img class="img-fluid" alt="Manoa Link landing page" src="../img/manoa-link/landing.png" />
+  <figcaption>Landing Page</figcaption>
+</figure>
 
 ### [Visit the app](https://manoalink.site)
 
@@ -28,54 +37,31 @@ _From our [project page](https://uhmanoalink.github.io/):_
 
 Manoa Link is an innovative web platform designed to facilitate easy meetups between students, job seekers, and companies. It serves as a one-stop solution for students looking to connect with potential employers, explore job opportunities, and attend industry events. With dedicated interfaces for students and companies, ManoaLink streamlines the process of building relationships, fostering growth, and creating meaningful connections.
 
-### [<img style="height: 2em;" alt="Meteor.js logo" src="../img/manoa-link/meteor-logo-full.png" />](https://www.meteor.com/)
+### Features
 
-#### This section is all about my thoughts about the Meteor framework. If this sounds interesting, keep reading! If not, you can [skip this section](#development).
+<figure>
+  <img class="img-fluid" alt="Manoa Link student dashboard" src="../img/manoa-link/student-dashboard.png">
+  <figcaption>Student Dashboard</figcaption>
+</figure>
+
+For students, the home page mainly consists of a feed where they can see upcoming events and review their saved jobs. As a student follow companies, any events that the company posts will show up in their feed. Also, if the student has specific events saved through the Events Board, they will also show up. From the Upcoming Events page, they can add any events to Google or Outlook Calendar. The other tab shows Saved Jobs. Here they can see specific job listings that they have saved. The job listings show details about the job and link to the application.
+
+<figure>
+  <img class="img-fluid" alt="Manoa Link company dashboard" src="../img/manoa-link/company-dashboard.png">
+  <figcaption>Company Dashboard</figcaption>
+</figure>
+
+For companies, the dashboard was meant to give an overview of everything. Companies can see all their upcoming events and job listings posted. On each job, it also shows a badge with how many people saved their job, so they have some popularity metrics. Finally, there's a calendar widget populated with their upcoming events so they can easily see their availability.
+
+---
+
+<a href="https://www.meteor.com/" target="_blank">
+  <img style="height: 2.5em;" alt="Meteor.js logo" src="../img/manoa-link/meteor-logo-full.png" />
+</a>
 
 In class, we learned about the Meteor framework, which lets developers easily build full-stack applications. Although now it's a bit old, Meteor's community is robust, so there are Atmosphere packages that solve most problems.
 
 This was my first time using Meteor, and will probably be my last. I see how it can be appealing to some developers, but to me, in the process of simplifying it actually overcomplicated.
-
-#### 👍 What I liked
-
-I liked how it simplified things like account creation, user authentication (which we never used), and (somewhat) database manipulation. Like I said, the package library is also really large, not even including NPM packages. The monorepo style also makes it easy to switch between working on the frontend and backend.
-
-#### 👎 What I disliked
-
-The main things I disliked were related to the database. Okay, I know I said database manipulation is something I liked about Meteor. What I was talking about is the Tracker, which lets pages and components stay up-to-date, with automatic updates as the database changes.
-
-In the month of working on the project, I never fully understood how Minimongo worked or how to use Meteor Methods vs pub/sub. I mean, conceptually, I get all of them. Minimongo caches a subset of the full database, giving fast reads and updates as if the database was in memory. Meteor Methods let you call server-side functions from the client. And pub/sub is, well, pub/sub. As someone more familiar with using a REST API to query the database, and a more clear separation between server and client, it was hard to wrap my head around Meteor's system.
-
-For example, in many instances, I would've preferred to use a Meteor Method to find a document over subscribing to a publication since it is less resource intensive and instant updates were not necessary. But I still needed to subscribe anyway? Really? There's a good chance that I was using Meteor Methods incorrectly, but those are confusing enough already!
-
-According to the docs, they, as well as any MongoDB method, are synchronous (unless you give it a callback function), but that wasn't always the case. One of our methods called `findOne` (should be synchronous on the server) and returned the document found.
-
-It might look something like:
-
-```js
-Meteor.methods({
-  ...
-  findOne(collectionName, selector) {
-    check(collectionName, String);
-    check(selector, Match.OneOf(Object, String, Mongo.ObjectID, Mongo.Selector));
-    // We used the package 'dburles:mongo-collection-instances' for the get method
-    const collection = Mongo.Collection.get(collectionName);
-    return collection.findOne(selector);
-  },
-  ...
-});
-```
-
-Then we called the method with something like:
-
-```js
-// This isn't exactly accurate, but is just an example
-const winstonDoc = Meteor.call('findOne', 'students', { name: 'Winston' });
-```
-
-When we did something like this, it confused me that we still needed to subscribe to any publications since the server would already have access to all the collections. Also, it would sometimes return `undefined` first, leading me to believe it's not actually synchronous.
-
-#### Okay, enough about Meteor
 
 ### Development
 
