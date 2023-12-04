@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Design Patterns | Winston Co | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="img/portrait-square.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Winston Co | Professional Portfolio">
+    <meta property="og:url" content="https://winstonco.org/314-techfolio/314-techfolio/essays/design-patterns.html">
+    <meta property="og:title" content="Design Patterns | Winston Co | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="img/portrait-square.png">
+    <link rel="shortcut icon" href="/314-techfolio/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/314-techfolio/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/314-techfolio/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Design Patterns | Winston Co | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/314-techfolio/">Winston Co</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/314-techfolio/#projects">Projects</a>
+        <a class="nav-link" href="/314-techfolio/#essays">Essays</a>
+        <a class="nav-link" href="/314-techfolio/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Design Patterns</h1>
+  <span class="date">27 Apr 2023</span>
+  <hr>
+  <h3 id="what-are-design-patterns">What are design patterns?</h3>
+
+<p>Design patterns are used in software design to solve common problems. They are commonly found chunks of code that make it easy to understand a problem and its solution. They also make it easier for other programmers to understand your work and what you’re trying to achieve. While I know a number of them, I don’t think too much about using them while I code (aside from the basic ones). Still, I happen to use design patterns whether I’m thinking about it or not, so here are some examples (using the definitions at <a href="https://www.patterns.dev/">Patterns.dev</a>):</p>
+
+<h3 id="singleton">Singleton</h3>
+
+<p><em>“Singletons are classes which can be instantiated once, and can be accessed globally. This single instance can be shared throughout our application, which makes Singletons great for managing global state in an application.”</em></p>
+
+<p>In my personal “<a href="https://winstonco.org/314-techfolio/projects/illustraitor">Illustraitor</a>” project, I used a singleton for the <code class="language-plaintext highlighter-rouge">CanvasDrawerInstance</code> class, since the HTML canvas element can only have one context, only one class that draws to it could exist.</p>
+
+<p>Another example is in “Manoa Link”, a class project made by a small team of 4. Each collection was its own singleton, with properties like the name of the collection, the collection itself, publication names, etc.</p>
+
+<blockquote>
+  <p>One thing to note is that in JavaScript, the singleton pattern being a “global instance of a class”  is just a carryover from OO languages like Java. In JS, you would probably just use an object literal.</p>
+</blockquote>
+
+<h3 id="higher-order-components">Higher Order Components</h3>
+
+<p><em>“A Higher Order Component (HOC) is a component that receives another component.”</em></p>
+
+<p>In Manoa Link, I made a component called ProtectedRender, a HOC that took in a child element and only rendered it under the right conditions.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">ProtectedRender</span> <span class="o">=</span> <span class="p">({</span> <span class="nx">allowedRoles</span><span class="p">,</span> <span class="nx">children</span> <span class="p">})</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">allowedRoles</span> <span class="o">===</span> <span class="kc">undefined</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span><span class="nx">Meteor</span><span class="p">.</span><span class="nx">user</span><span class="p">())</span> <span class="p">?</span> <span class="nx">children</span> <span class="p">:</span> <span class="kc">null</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="p">(</span><span class="nx">allowedRoles</span><span class="p">.</span><span class="nx">some</span><span class="p">(</span>
+    <span class="p">(</span><span class="nx">role</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">Roles</span><span class="p">.</span><span class="nx">userIsInRole</span><span class="p">(</span><span class="nx">Meteor</span><span class="p">.</span><span class="nx">userId</span><span class="p">(),</span> <span class="nx">role</span><span class="p">),</span>
+  <span class="p">))</span>
+    <span class="p">?</span> <span class="nx">children</span>
+    <span class="p">:</span> <span class="kc">null</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h3 id="factory">Factory</h3>
+
+<p><em>“A function is a factory function when it returns a new object without the use of the new keyword!”</em></p>
+
+<p>In a recent addition to Manoa Link, I added functionality for file uploading. The package I used was a Meteor Atmosphere package called <a href="https://packosphere.com/ostrio/files">ostrio:files</a>. While following their templates for saving files using GridFS, MongoDB’s specification for large file storage, I noticed that a few of the functions they defined were factory functions to create handlers! One example is <code class="language-plaintext highlighter-rouge">createInterceptDownload</code>, which I’m showing the first few lines of below.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="kd">const</span> <span class="nx">createInterceptDownload</span> <span class="o">=</span> <span class="nx">bucket</span> <span class="o">=&gt;</span> <span class="p">(</span>
+  <span class="kd">function</span> <span class="nx">interceptDownload</span><span class="p">(</span><span class="nx">http</span><span class="p">,</span> <span class="nx">file</span><span class="p">,</span> <span class="nx">versionName</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="p">{</span> <span class="nx">gridFsFileId</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">file</span><span class="p">.</span><span class="nx">versions</span><span class="p">[</span><span class="nx">versionName</span><span class="p">].</span><span class="nx">meta</span> <span class="o">||</span> <span class="p">{};</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">gridFsFileId</span><span class="p">)</span> <span class="p">{</span>
+      <span class="p">...</span>
+</code></pre></div></div>
+
+<p>So basically, design patterns are everywhere. In fact, there are even more that I use all the time, which I’m not going into, like Modules, Hooks, Static Imports and Preload/Prefetch!</p>
+
+<h3 id="go-to-patternsdev-not-sponsored">Go to Patterns.dev #not-sponsored</h3>
+
+<p>Okay, it’s linked above, but here it is again: https://www.patterns.dev/. I highly recommend learning more about design patterns by looking through the sections on their website or reading their book. Design patterns are great to learn and using them effectively is something that programmers should strive to do.</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

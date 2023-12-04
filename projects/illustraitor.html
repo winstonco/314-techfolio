@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Illustraitor | Winston Co | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="img/portrait-square.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Winston Co | Professional Portfolio">
+    <meta property="og:url" content="https://winstonco.org/314-techfolio/314-techfolio/projects/illustraitor.html">
+    <meta property="og:title" content="Illustraitor | Winston Co | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="img/portrait-square.png">
+    <link rel="shortcut icon" href="/314-techfolio/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/314-techfolio/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/314-techfolio/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Illustraitor | Winston Co | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/314-techfolio/">Winston Co</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/314-techfolio/#projects">Projects</a>
+        <a class="nav-link" href="/314-techfolio/#essays">Essays</a>
+        <a class="nav-link" href="/314-techfolio/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Illustraitor</h1>
+ <div style="display:flex;flex-direction:column;align-items:center">
+  <img class="img-fluid" src="../img/illustraitor/home.png" />
+  Home page
+  <h3><a href="https://illustraitor.onrender.com/" target="_blank" style="text-decoration:underline">Play Now</a></h3>
+</div>
+
+<h3 id="about-the-game">About the game</h3>
+
+<h4 id="what-is-sham-illustrator">What is Sham Illustrator?</h4>
+
+<p>It’s a party game where everyone is an artist, but one player is actually a fake. Every player is given the same prompt, except the imposter (they get much less, and must figure out what the prompt is before it’s too late). In a random order, each player has a short time to add to a collective drawing, each trying to prove they know what the true prompt is. At the end of the game, the goal is to guess who the imposter was.</p>
+
+<h4 id="game-setup">Game setup</h4>
+
+<p>You can create a lobby by clicking the link above (‘Play Now’), and clicking <code class="language-plaintext highlighter-rouge">New Lobby</code>.</p>
+
+<p><strong>[Note]</strong> for some reason, the initial page load time is sometimes <em>really</em> slow. It might have to do with how the changelog is being fetched, so I need to look into it.</p>
+
+<p>After creating a lobby and entering a name or randomly generating one, click <code class="language-plaintext highlighter-rouge">COPY INVITE LINK</code> to get a link to share with other people. Alternatively, other players can join your lobby with the 12-character code, after clicking <code class="language-plaintext highlighter-rouge">Join Lobby</code>, if that’s easier for some reason.</p>
+
+<p>You can also change lobby specific settings on the home page, before creating a lobby.</p>
+
+<h4 id="how-to-play">How to play</h4>
+
+<p>Once a minimum of three players have joined a lobby. Press <code class="language-plaintext highlighter-rouge">Start</code> to start the game. One player will have the role ‘Imposter’ and everyone else will be ‘Real’. Everyone except the Imposter should see the prompt appear and who is currently drawing. That player has default 15 seconds to draw something on the screen. Players rotate until every player has gone, after which every player may guess a name who they think was faking it. By default, the number of rounds equals the number of imposters, and the real artists win by correctly revealing the all the imposters, meaning they must win every round.</p>
+
+<hr />
+
+<h3 id="the-goal-">The goal 🏁</h3>
+
+<p>Initially, I thought the project would be on the shorter side, but a little over a month later, I no longer think it is. The goal was mainly to learn TypeScript, which I enjoy using very much, and at the same time get more familiar with React. I also wanted to try Material UI, a React component library, to learn more about different development tools and styles.</p>
+
+<p>Overall, I’m really proud of this project. All of it is my own work, and development has been pretty smooth. I have a lot of fun working on it and am very excited for when it’s finally done and I can play it with my friends 🙂.</p>
+
+<h4 id="vite">Vite</h4>
+
+<p>I believe it was also the first time I used the build tool <a href="https://vitejs.dev/">Vite</a>, which I also really love using. Before, I’d used CRA (Create React App), which <em>feels</em> slower than Vite, but I don’t know the details of why.</p>
+
+<p>This blog post by Chetan Gawai: <a href="https://semaphoreci.com/blog/vite#:~:text=Unlike%20a%20CRA%20or%20bundler,large%20component%20libraries%20like%20mui">“4 Reasons Why You Should Prefer Vite Over Create-React-App (CRA)”</a> goes in more detail about the advantages of using Vite.</p>
+
+<h3 id="thisstart">this.start()</h3>
+
+<p>Being my first time using TypeScript in a project, the first week was pretty light. I was mostly playing around with TypeScript to first make a proof of concept. I made a canvas and some methods to draw with the mouse. Then, I made an Express server and used Socker.io to send draw events to other players. Once I got the fundamentals of the game created, I knew it was feasible.</p>
+
+<h3 id="new-obvious-project-structure">New? Obvious? project structure</h3>
+
+<p>This time, I have client and server code in <em>separate repositories</em> (revolutionary, I know), unlike in my <a href="/314-techfolio/projects/search-helper.html">Search Helper</a>. Since I have to open 2 instances of VSCode, one for client-side and one for server-side, in a way it’s inconvenient having them separate. It’s definitely made up for during deployment since I don’t have to rebuild my server-side code when I push new client-side code, for example. I also think it is also more organized than a monorepo style.</p>
+
+<h3 id="testing-">Testing 😓</h3>
+
+<p>Recently, I decided to add tests to this project, mainly E2E tests with Cypress, but I haven’t gotten around to it yet. I realize it would save me a lot of time instead of manually testing every page and feature.</p>
+
+<hr />
+
+<div style="display:flex;flex-direction:column;align-items:center">
+  <img class="img-fluid" src="../img/illustraitor/404.png" />
+  Custom 404 page. The door goes back to home.
+</div>
+
+<hr />
+
+<p>Repo: <a href="https://github.com/winstonco/sham-illustrator"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-github mx-1" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg> winstonco/sham-illustrator </a></p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

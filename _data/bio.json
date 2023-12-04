@@ -1,0 +1,73 @@
+{
+  "basics": {
+    "name": "Winston Co",
+    "label": "Junior Computer Science Student",
+    "picture": "img/portrait-square.png",
+    "email": "winstonco@live.com",
+    "phone": "808-724-6024",
+    "website": "https://winstonco.org/314-techfolio",
+    "summary": "I am pursuing a B.S. in Computer Science at the University of Hawaii. I expect to graduate in Spring, 2024.",
+    "profiles": [
+      {
+        "network": "github",
+        "username": "winstonco",
+        "url": "http://github.com/winstonco"
+      },
+      {
+        "network": "linkedin",
+        "username": "winston-co",
+        "url": "http://linkedin.com/in/winston-co"
+      }
+    ]
+  },
+  "interests": [
+    { "name": "Software engineering" },
+    { "name": "Web development" },
+    { "name": "App development" }
+  ],
+  "skills": [
+    {
+      "name": "Languages and Frameworks",
+      "keywords": ["HTML", "CSS", "JavaScript", "TypeScript", "React"]
+    },
+    {
+      "name": "Toolsets/OS",
+      "keywords": ["VSCode", "Windows", "Git", "GitHub"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Hawaii at Manoa",
+      "studyType": "B.S.",
+      "area": "Computer Science (expected graduation: Spring, 2024)",
+      "startDate": "2021-08-23",
+      "endDate": "Present",
+      "courses": [
+        "ICS 314: Software Engineering I",
+        "ICS 311: Algorithms",
+        "MATH 307: Linear Algebra & Differential Equations"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "VIP RoSE (Robotic Space Exploration)",
+      "website": "http://manoa.hawaii.edu/uh-vip/project/robotic-space-exploration-rose-vip/",
+      "position": "Software Engineer",
+      "startDate": "2021-09",
+      "endDate": "2022-05",
+      "summary": "I volunteered as a software engineer in my freshman year. I worked with the team to create rover software for the autonomous section of the University Rover Challenge 2023.",
+      "highlights": [
+        "Implemented a logic framework using a state machine library",
+        "Helped test waypoint detection and path planning functionalities"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Eagle Scout",
+      "date": "2021-04-30",
+      "awarder": "Aloha Council, BSA"
+    }
+  ]
+}

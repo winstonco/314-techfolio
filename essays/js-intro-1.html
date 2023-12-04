@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="My Thoughts on JavaScript | Winston Co | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="img/portrait-square.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Winston Co | Professional Portfolio">
+    <meta property="og:url" content="https://winstonco.org/314-techfolio/314-techfolio/essays/js-intro-1.html">
+    <meta property="og:title" content="My Thoughts on JavaScript | Winston Co | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="img/portrait-square.png">
+    <link rel="shortcut icon" href="/314-techfolio/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/314-techfolio/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/314-techfolio/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>My Thoughts on JavaScript | Winston Co | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/314-techfolio/">Winston Co</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/314-techfolio/#projects">Projects</a>
+        <a class="nav-link" href="/314-techfolio/#essays">Essays</a>
+        <a class="nav-link" href="/314-techfolio/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">My Thoughts on JavaScript</h1>
+  <span class="date">18 Jan 2023</span>
+  <hr>
+  <h3 id="my-prior-experience-with-js">My prior experience with JS</h3>
+
+<p>I wouldn’t by any means say I’m an expert at using JavaScript. I wouldn’t even call myself ‘experienced’. In fact, I only started learning it at the end of last October. However, in terms of the number of hours used, it is probably my most used language, even passing Java, which I used exclusively during my freshman year of college.</p>
+
+<p>When I first started learning it, I was surprised by how similar it felt to using Java, syntactically, albeit without typing, which is a significant difference. After using it for a few weeks, I really enjoyed coding in JavaScript. I find it more fun than Java, and I like the language’s features (first-order functions, etc.). There are a few things that I still do out of habit, such as typing starting a for loop with int:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="o">...)</span> <span class="o">{</span>
+  <span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>instead of</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="p">...)</span> <span class="p">{</span>
+  <span class="p">...</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>or trying to add typing to a function (usually in the arguments):</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">sum</span><span class="o">(</span><span class="kt">int</span> <span class="n">num1</span><span class="o">,</span> <span class="kt">int</span> <span class="n">num2</span><span class="o">)</span> <span class="o">{</span>
+  <span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>instead of</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">sum</span><span class="p">(</span><span class="nx">num1</span><span class="p">,</span> <span class="nx">num2</span><span class="p">)</span> <span class="p">{</span>
+  <span class="p">...</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>though usually I’d write</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">sum</span> <span class="o">=</span> <span class="p">(</span><span class="nx">num1</span><span class="p">,</span> <span class="nx">num2</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{...}</span>
+</code></pre></div></div>
+
+<hr />
+
+<p><img src="../img/js-intro-1/freeCodeCamp.png" /></p>
+
+<h3 id="what-i-learned-on-freecodecamp-and-what-to-learn-in-the-future">What I learned on freeCodeCamp and what to learn in the future</h3>
+
+<p>While doing the tutorial on freeCodeCamp, one thing I learned about was object bracket notation. Previously, I’d only used dot notation, but I see how bracket notation can be extremely valuable. With dot notation, you can’t use a variable for the property, but with bracket notation you can, while also doing the same thing that dot notation already does. I’m also not good at using the many array methods. The ones at the top of my list to learn are <code class="language-plaintext highlighter-rouge">.filter</code>, <code class="language-plaintext highlighter-rouge">.map</code>, and <code class="language-plaintext highlighter-rouge">.reduce</code>.</p>
+
+<h3 id="es6">ES6</h3>
+
+<p>I also have some experience with ES6, but I still have a lot to learn. The features I use most commonly are let and const, destructuring, modules, and arrow functions.</p>
+
+<p>Using let and const to declare variables is much safer than using var all the time. I prefer using ES6 imports compared to require because it is async, plus I think the syntax is easier to read.</p>
+
+<p>At first, I thought arrow functions were a really weird way to write functions, but I grew used to them and now prefer how they look over normal functions. I think using them allows for more succinct code, and they are especially helpful when writing anonymous functions for callbacks or event handlers.</p>
+
+<p>One thing that’s not in ES6 but I also use a lot is <code class="language-plaintext highlighter-rouge">async</code>/<code class="language-plaintext highlighter-rouge">await</code>. I find it way easier to read than chaining <code class="language-plaintext highlighter-rouge">.then</code>’s. It also replaces <code class="language-plaintext highlighter-rouge">.catch</code> with regular <code class="language-plaintext highlighter-rouge">try</code>/<code class="language-plaintext highlighter-rouge">catch</code> blocks, which is also easier to understand.</p>
+
+<p><img class="rounded float-end ms-4" src="../img/js-intro-1/rest-args.png" /></p>
+
+<p>One feature of ES6 that I am not very familiar with is spread/rest syntax. I understand what it does and how it’s used, but I find it hard to recognize when it can be used while coding. I’ve only used it once or twice, specifically when I wanted to pass the same arguments from a custom class’ constructor to the <code class="language-plaintext highlighter-rouge">super()</code> call.</p>
+
+<h3 id="typescript">TypeScript</h3>
+
+<p>Recently, I’ve started using TypeScript and I really like it. The language’s strong typing means better type safety and I can use IDE tools like IntelliSense. For example, when VSCode knows a variable is a string, it will offer string methods. It also helps a lot to check for errors in code before being shipped, like null checking. Since I only started learning it recently, I’m still not used to a lot of the syntax, like how to make union types or intersection types, or the features, like writing interfaces. However, when used well, I think it is a better language to use than JavaScript.</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
